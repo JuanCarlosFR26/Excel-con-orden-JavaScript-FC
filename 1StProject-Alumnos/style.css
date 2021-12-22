@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f9;
+}
+
+input, select {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px 12px;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    top: 0;
+    background: #f8f8f9;
+}
+
+.nav > h3 {
+    position: static;
+    width: 297px;
+    height: 28px;
+    left: calc(50% - 297px/2);
+    top: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #121625;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 6px;
+}
+
+.nav > h3 > span {
+    color: #32D5A4;
+}
+
+.nav > .userName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 0;
+    position: relative;
+    width: 147px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    border-radius: 91px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 30px;
+}
+
+.nav > .userName > img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: static;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    border-radius: 59px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+
+}
+
+.nav > .userName > a {
+    position: static;
+    width: 78px;
+    height: 22px;
+    left: 55px;
+    top: 9px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #121625;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-right: 22px;
+    text-decoration: none;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.nav > .userName > a > i {
+    position: absolute;
+    right: 26.22%;
+    left: 76%;
+    top: 38.72%;
+    bottom: 31.61%;
+}
+
+
+/*EXCEL*/
+.table__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 80px;
+    position: relative;
+    background-color: #f8f8f9;
+    top: 160px;
+    width: 70%;
+    height: 450px;
+}
+
+.table__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #f8f8f9;
+}
+
+.table__nav > input {
+    padding: 5px 14px 5px 10px;
+    position: static;
+    width: 148px;
+    height: 40px;
+    top: 0;
+    background-color: #ffffff;
+    border: 1px solid #e6e6ea;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.table__nav > .search {
+    display: flex;
+    margin-bottom: 40px;
+    width: 440px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table__nav > .search > label {
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.table__nav > .search > input {
+    height: 40px;
+    width: 343px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: #e6e6ea;
+}
+
+::placeholder {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding: 8px;
+
+}
+
+.table__container > .exc__container {
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.exc__container > .excel {
+    width: 100%;
+}
+
+.exc__container > .excel > tr, th, td {
+    text-align: center;
+    width: 16.6%;
+    padding: 12px;
+    border-bottom: 1px solid #e6e6ea;
+}
+
+.exc__container > .excel > thead > tr > th {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    color: #a5a8b3;
+    cursor: pointer;
+}
+
+
+.exc__container > .excel > tbody > tr > td {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #121625;
+}
+
+.exc__container > .excel > tbody > tr:last-child {
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.aside__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px 24px;
+    position: relative;
+    width: 330px;
+    height: 647px;
+    left: 1346px;
+    top: -360px;
+    background: #ffffff;
+    border: 1px solid #e6e6ea;
+    border-radius: 20px;
+}
+
+.aside__container > aside > h4 {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    height: 21px;
+    position: static;
+    left: calc(50%-172px/2);
+    top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-style: normal;
+    line-height: 21px;
+}
+
+.aside__container > aside > h4 > i {
+    color: #32D5A4;
+    cursor: pointer;
+    
+}
+
+.aside__container > aside > .select__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 600px
+}
+
+.aside__container > aside > .select__container > label {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #121625;
+}
+
+.aside__container > aside > .select__container > select {
+    background: #f8f8f9;
+    border-radius: 8px;
+    width: 282px;
+    height: 40px;
+    border: none;
+    margin: -10px 8px;
+
+}
+
+.aside__container > aside > .select__container > h5 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #121625;
+}
+
+.aside__container > aside > .select__container > p > input{
+    margin-right: 8px;
+}
+
+

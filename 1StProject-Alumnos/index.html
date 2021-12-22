@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/ac29e13ac3.js" crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     
+</head>
+<body>
+
+
+    <!--CABECERA-->
+    <div class="header__container">
+        <nav class="nav">
+            <h3>OpenBootcamp <span>| Alumnos</span></h3>
+            <div class="userName">
+            <img src="./img/img.jpg">
+            <a href="#">UserName <i class="fas fa-chevron-down"></i></a>
+            </div>
+            
+        </nav>
+    </div>
+
+    <!--TABLA-->
+    <div class="table__container">
+        <!--Navegador-->
+        <nav class="table__nav">
+            <div class="search">
+                <label for="search">Alumnos</label>
+                <input type="search" name="search" id="search" placeholder=" Buscar por Nombre, Email o Palabra clave...">
+            </div>
+            
+            <input type="button" value="+ Añadir alumnos">
+        </nav>
+
+        <!--Excel de alumnos-->
+        <div class="exc__container">
+            <table class="excel">
+                <thead>
+                    <tr>
+                        <th class="sortable">Nombre <i class="fas fa-sort"></i></th>
+                        <th>Ciudad <i class="fas fa-sort"></i></th>
+                        <th>País <i class="fas fa-sort"></i></th>
+                        <th>Teléfono</th>
+                        <th>Correo Electrónico <i class="fas fa-sort"></i></th>
+                        <th>Etiquetas <i class="fas fa-sort"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Álvaro Sánchez Monteaguado</td>
+                        <td>Valencia</td>
+                        <td>España</td>
+                        <td>+34 657 85 25 46</td>
+                        <td>smonteagudo@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Amparo Herrera Climent</td>
+                        <td>Sevilla</td>
+                        <td>España</td>
+                        <td>+34 689 25 48 65</td>
+                        <td>hcliment@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Ana Gutierrez Lozano</td>
+                        <td>Valencia</td>
+                        <td>España</td>
+                        <td>+34 925 65 87 65</td>
+                        <td>glonzano@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Antonio Miguel Lacunza</td>
+                        <td>Madrid</td>
+                        <td>España</td>
+                        <td>+34 658 95 24 56</td>
+                        <td>mlacunza@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Belén Jerez Rivera</td>
+                        <td>Barcelona</td>
+                        <td>España</td>
+                        <td>+34 697 82 95 24</td>
+                        <td>jrivera@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Carla Barroso Soriano</td>
+                        <td>Valencia</td>
+                        <td>España</td>
+                        <td>+34 958 65 41 54</td>
+                        <td>bsoriano@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Yuste Guerrero</td>
+                        <td>Lugo</td>
+                        <td>España</td>
+                        <td>+34 695 84 62 54</td>
+                        <td>yguerrero@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    <tr>
+                        <td>Carmina Pérez López</td>
+                        <td>Valencia</td>
+                        <td>España</td>
+                        <td>+34 633 33 32 53</td>
+                        <td>cperezlo@gmail.com</td>
+                        <td><span>HTML & CSS</span><span> Angular</span></td>
+                    </tr>
+                    
+
+                </tbody>
+                
+            </table>
+        </div>
+
+        
+
+    </div>
+
+    <div class="aside__container">
+            <aside>
+                <h4>Filtros de búsqueda <i class="fas fa-trash-alt"></i></h4>
+
+                <div class="select__container">
+                    <label for="Etiquetas">Etiquetas</label>
+                    <select name="Etiquetas" id="etiquetas">
+                        <option hidden selected>Escribe para buscar...</option>
+                        <option value="">HTML&CSS</option>
+                        <option value="">JavaScript</option>
+                        <option value="">ReactJS</option>
+                        <option value="">AngularJS</option>
+                        <option value="">Java</option>
+                        <option value="">Spring</option>
+                        <option value="">Hibernate</option>
+                        <option value="">Git</option>
+                        <span> </span>
+                    </select>
+                    <label for="Paises">País</label>
+                    <select name="Paises" id="paises">
+                        <option selected value="">España</option>
+                        <option value="">Portugal</option>
+                        <option value="">Francia</option>
+                        <option value="">Venezuela</option>
+                        <option value="">Colombia</option>
+                        <option value="">Argentina</option>
+                        <option value="">México</option>
+                        <option value="">Bolivia</option>
+                    </select>
+                    <label for="Ciudades">Ciudad</label>
+                    <select name="Ciudades" id="ciudades">
+                        <option selected value="">Valencia</option>
+                        <option value="">Cádiz</option>
+                        <option value="">Madrid</option>
+                        <option value="">Barceolna</option>
+                        <option value="">Sevilla</option>
+                        <option value="">Granada</option>
+                        <option value="">Asturias</option>
+                        <option value="">Toledo</option>
+                    </select>
+                    <h5>Presencial / a distancia</h5>
+                    <p><input type="checkbox" name="check" id="check"> Presencial</p>
+                    <p><input type="checkbox" name="check" id="check"> En remoto</p>
+                    <h5>Posibilidad traslado</h5>
+                    <p><input type="checkbox" name="check" id="check"> Sí</p>
+                    <p><input type="checkbox" name="check" id="check"> No</p>
+                    
+                </div>
+            </aside>
+        </div>
+
+    
+
+
+        
+        <script src="jquery-3.6.0.min.js"></script> 
+        <script src="main.js"></script>
+</body>
+</html>
